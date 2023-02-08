@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Set</title>
+</head>
+<body>
+    <!-- SET-> it contain only unique values
+        object constructor -->
+    <script>
+        // let myArray = [1,2,3,4];
+        // let set = new Set(myArray);
+        // set.add(5);
+        // set.add(5);// duplicate value are not allowd
+        // set.delete(5);
+        // let obj = {
+        //     name: "hamza"
+        // }
+        // set.add(obj)
+        // console.log(set);
+        // console.log(set.has(obj));
+        // set.clear();
+        // console.log(set);
+
+        // for(let user of set){
+        //     console.log(user);
+        // }
+        
+        // map -> key -> value
+        // MAP mae ham key value form mae data ko store karty hai
+
+        let myMap = new Map([["a1","hamza"],["a2","waleed"]]);
+        myMap.set("a2","walee");
+        console.log(myMap)
+         myMap.delete("a2")
+        // // myMap.clear();
+        // console.log(myMap.get('a2'));
+
+        // for (let entry of myMap.keys()) {
+        //     console.log(entry);
+        // }
+
+        // for (let entry1 of myMap.values()) {
+        //     console.log(entry1);
+        // }
+
+        // for(let [key,value] of myMap){
+        //     console.log(`key ${key},value ${value}`);
+        // }
+
+        // Weakset mae hmm siraf object ko store kar sakty hai or object ko iterate ni kar sakty
+        // let ws = new WeakSet();
+        // let ob1 = {name: "hamza"};
+        // let ob2 = {};
+        // ws.add(ob1);
+        // ws.add(ob2);
+        // ws.delete(ob1);
+        // console.log(ws);
+        // console.log(ws.has(ob2));
+
+        //WeakMap mae hmm siraf object ko store kar sakty hai or object ko iterate ni kar sakty
+
+        // let wm = new WeakMap();
+        // let ob3 = {name: "hamza"};
+        // let ob4 = {};
+        // wm.set(ob3,"Private");
+        // wm.set(ob4,"Private data")
+        // console.log(wm);
+        // console.log(wm.has(ob4));
+    </script>
+</body>
+</html>

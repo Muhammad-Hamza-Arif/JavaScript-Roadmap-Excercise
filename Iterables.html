@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterables</title>
+</head>
+<body>
+    <script>
+        let number = [11,22,33];
+        // let str = "Yahoo Baba";
+        let itera = number[Symbol.iterator]();
+        // (itera.next());
+        // (itera.next());
+        // console.log(itera.next().value);
+        // console.log(itera.next().done);
+
+        let result = itera.next();
+        console.log(result.done);
+        while(!result.done){
+            // console.log(result.done);
+            console.log(result.value)
+            result = (itera.next());
+        }
+    </script>
+</body>
+</html>

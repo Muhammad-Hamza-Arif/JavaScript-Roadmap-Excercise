@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object references and copying</title>
+</head>
+<body>
+    <script>
+        // a = 10;
+        // b = a;
+        // console.log(a,b);
+
+    let hello = {
+        name : "hamza",
+        age: 20
+    }
+
+    // let clone = hello;
+    // clone.name = "hamza1";
+    // console.log(clone,hello);
+
+    // clone = {}
+    // for(let key in hello) {
+    //     clone[key] = hello[key]; 
+    // }
+    // clone.name = "zaid";
+    // console.log(hello,clone);
+
+    let property1 = { name1: "zaid",salary: 1000};
+    Object.assign(hello,property1);
+    // Object.assign(hello,{name1:"zaid"});
+    console.log(property1);
+    console.log(hello);
+
+    //  object.assign ak function hai jo ky ak object ko kisi dosry object mae copy karta hai uski values
+    //  dosry object ko assign karta hai
+    // object.assign ko use karny sy hmm loop sy bach jaty hai
+
+    // let clone = Object.assign({},hello);
+    // clone.name = "peter";
+    // console.log(hello,clone);
+
+    // const hello = {
+    //     name: "hamza",
+    //     age: 20
+    // }
+    // hello.name = "zaid";
+    // console.log(hello);
+    // const object mae value change ho jati hai
+    </script>
+</body>
+</html>

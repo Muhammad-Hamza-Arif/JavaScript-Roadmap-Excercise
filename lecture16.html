@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor, operator "new"</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    Constructor functions technically are regular functions. There are two conventions though:
+
+    1. They are named with capital letter first.
+    2. They should be executed only with "new" operator.
+    
+    constructor function
+    esy hmm constructor function bnaty hai jis mae hmm this{keyword} ka use karty hai
+    ye function as a construction function behave kary ga agr isy sahi tareeky sy call kary gy
+    */
+    function Student(firstname,lastname){
+        // let this = {};
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.getfullname = () => {
+            console.log(`${this.firstname} ${this.lastname}`);
+        }
+        return this;
+    }
+    /*
+    constructor function call karny ka tareeka
+    javascript mae jab bhi hmm new keyword ka use karty hai ak function sy phaily javascript hamara constructor mood mae chala jata hai
+    behind the seen hamary lye ak naya object bana deta hai wo empty object hota hai is empty object ky ander hmm property add kar dety hai
+    mtlb wo this name ka object bnta hai jo ky hamara empty object hoga us mae hmm apni property add kar dety hai or akhir mae us object ko 
+    return kar dety hai mtlb wo try karta hai jo apki function call hai wo apko ak object return kary gi
+    */
+    let Student1 = new Student("Hamza","Arif");
+    console.log(Student1);
+</script>
+</html>

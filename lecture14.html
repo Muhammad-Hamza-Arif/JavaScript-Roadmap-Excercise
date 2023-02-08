@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+    var a = {
+        // properties : values
+        fname : "muhammad",
+        lname : 'hamza',
+        age : 20,
+        roll_no : 1234,
+        email : "hamza5545613@gmail.com",
+        // object inside array
+        Array : ['ali','12'],
+        // Object inside object
+        living : {
+            city : 'lahore',
+            country : 'pakistan'
+        },
+        // function inside object
+        // function ko inside object mae method bola jata hai
+        salary : function () {
+            return 2200;
+        },
+        fullname : function () {
+            return this.fname + " " + this.lname;
+            // yahan par this a ky lye use ho rha hai q k is object ka owner a hai 
+        }
+
+    }
+    console.log(a);
+    // document.write(a.Array[0]);
+    document.write(a.living.country);
+</script>
+</body>
+</html>
